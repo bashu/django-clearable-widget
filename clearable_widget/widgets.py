@@ -22,7 +22,7 @@ class ClearableInput(MediaMixin, forms.TextInput):
     def render(self, name, value, attrs=None):
         if value is None: value = ''
 
-        output = """<div class="clear-holder">%(widget)s<span class="clear-helper">&times;</span></div>
+        output = """<div class="clear-holder">%(widget)s<span class="clear-helper hidden">&times;</span></div>
 <script type="text/javascript">$(document).ready(function() { $('.clear-holder input[name="%(name)s"]').clearable(); });</script>
 """ % {'widget': super(ClearableInput, self).render(name, value, attrs), 'name': name}
 
