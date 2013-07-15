@@ -24,7 +24,7 @@ class ClearableInput(MediaMixin, forms.TextInput):
         if value is None:
             value = ''
 
-        if 'django_jinja' in settings.INSTALLED_APPS:
+        if getattr(settings, 'USE_JINJA', False):
             template_name = 'clearable_widget/input.jinja'
         else:
             template_name = 'clearable_widget/input.html'
