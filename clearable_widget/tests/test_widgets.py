@@ -13,3 +13,9 @@ class ClearableFieldTest(TestCase):
 
         response = self.field.widget.render('value', 'test', {'id': 'id_field'})
         self.assertTrue('clear-holder' in response and 'test' in response)
+
+    def test_empty(self):
+        self.field = forms.CharField(required=False, widget=ClearableInput)
+
+        response = self.field.widget.render('value', None, {'id': 'id_field'})
+        self.assertTrue('clear-holder' in response and not "None" in response)
