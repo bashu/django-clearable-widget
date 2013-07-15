@@ -1,0 +1,4 @@
+django==1.4.5
+-e git+https://github.com/kmmbvnr/django-jenkins.git#egg=django-jenkins
+pep8
+pyflakes
