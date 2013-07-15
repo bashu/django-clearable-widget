@@ -4,8 +4,6 @@ from django import forms
 from django.template.loader import render_to_string
 from django.contrib.staticfiles.storage import staticfiles_storage
 
-__all__ = ['ClearableInput']
-
 
 class MediaMixin(object):
 
