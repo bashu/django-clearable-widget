@@ -17,11 +17,18 @@ DATABASES = {
 
 STATIC_URL = '/site_media/static/'
 
+TEMPLATE_LOADERS = (
+    'django_jinja.loaders.AppLoader',
+    'django_jinja.loaders.FileSystemLoader',
+)
+
 PROJECT_APPS = [
     'clearable_widget',
     ]
 
 INSTALLED_APPS = [
+    'django_jinja',
+
     'django_jenkins',
     ] + PROJECT_APPS
 
@@ -46,6 +53,7 @@ if __name__ == "__main__":
         JENKINS_TASKS = JENKINS_TASKS,
         COVERAGE_EXCLUDES_FOLDERS = COVERAGE_EXCLUDES_FOLDERS,
         PYLINT_RCFILE = PYLINT_RCFILE,
+        TEMPLATE_LOADERS = TEMPLATE_LOADERS,
         TEMPLATE_DEBUG = TEMPLATE_DEBUG
         )
     execute_manager(settings)

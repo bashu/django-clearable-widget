@@ -17,6 +17,10 @@ setup(
     url='http://github.com/bashu/django-clearable-widget',
     author='Basil Shubin',
     author_email='basil.shubin@gmail.com',
+    install_requires=[
+        'jinja2',
+        'django-jinja',
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
