@@ -1,7 +1,9 @@
 .clear-holder {
+  vertical-align: middle;
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: middle;
+  zoom: 1; 
+  *display: inline;
 }
 
 .clear-holder input[type="text"],
