@@ -16,11 +16,14 @@
   display: inline-block;
   font-weight: normal;
   vertical-align: middle;
-  height: 21px;
   margin-left: -27px;
   width: 24px;
   text-align: center;
   color: #d2d2cd;
+}
+
+.clear-helper > *:hover { 
+  color: #828282;
 }
 
 .hidden {
