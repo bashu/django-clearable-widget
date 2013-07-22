@@ -7,7 +7,7 @@
             if (form) { $(form).trigger('cleared.clearable', [$this]); }
         });
         $this.on('keyup change input', function() {
-            if ($this.val()) {
+            if ($(this).val()) {
                 $(".clear-helper", $this.parent()).removeClass('hidden');
             } else {
                 $(".clear-helper", $this.parent()).addClass('hidden');
