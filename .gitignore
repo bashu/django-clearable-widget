@@ -1,2 +1,2 @@
 *.pyc
-reports
+.DS_Store
