@@ -7,7 +7,7 @@ from django.test import TestCase
 from ..widgets import ClearableInput
 
 
-class ClearableFieldTest(TestCase):
+class ClearableInputTest(TestCase):
 
     def test_jinja_template(self):
         old_USE_JINJA = getattr(settings, 'USE_JINJA', False)
