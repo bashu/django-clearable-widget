@@ -2,8 +2,8 @@
   vertical-align: middle;
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1; 
   *display: inline;
+  zoom: 1; 
 }
 
 .clear-holder input[type="text"],
@@ -18,14 +18,9 @@
   display: inline-block;
   font-weight: normal;
   vertical-align: middle;
+  text-align: center;
   margin-left: -27px;
   width: 24px;
-  text-align: center;
-  color: #d2d2cd;
-}
-
-.clear-helper > *:hover { 
-  color: #828282;
 }
 
 .hidden {
