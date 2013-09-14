@@ -7,16 +7,6 @@ from django.test import TestCase
 from clearable_widget.widgets import ClearableInput
 
 
-class ClearableInputTest(TestCase):
-
-    def setUp(self):
-        self.field = forms.CharField(required=False, widget=ClearableInput)
-
-    def test_redner(self):
-        response = self.field.widget.render('value', None, {'id': 'id_field'})
-        self.assertTrue('clear-holder' in response and not "None" in response)
-
-
 class ClearableInputDjangoTest(TestCase):
 
     def setUp(self):
@@ -44,6 +34,6 @@ class ClearableInputJinjaTest(TestCase):
     def tearDown(self):
         settings.USE_JINJA = self.old_USE_JINJA
 
-    def test_template(self):
+    def test_render(self):
         response = self.field.widget.render('value', 'test', {'id': 'id_field'})
         self.assertTrue('clear-holder' in response and 'test' in response)
