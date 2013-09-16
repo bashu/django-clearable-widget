@@ -30,5 +30,5 @@ class ClearableInput(MediaMixin, forms.TextInput):
             template_name = 'clearable_widget/input.html'
 
         output = super(ClearableInput, self).render(name, value, attrs)
-        return render_to_string(template_name, {
-                'widget': output, 'name': name})
+        return render_to_string(
+            template_name, {'widget': output, 'name': name})
