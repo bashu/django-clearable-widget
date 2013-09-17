@@ -41,17 +41,6 @@ class ClearableInputJinjaTest(TestCase):
 
 class ClearableInputEmptyTest(TestCase):
 
-    def setUp(self):
-        self.old_USE_JINJA = getattr(settings, 'USE_JINJA', False)
-        settings.USE_JINJA = True
-
-        self.field = forms.CharField(required=False, widget=ClearableInput)
-
-    def tearDown(self):
-        settings.USE_JINJA = self.old_USE_JINJA
-
-    def test_empty(self):
+    def test_render(self):
         response = self.field.widget.render('value', None, {'id': 'id_field'})
         self.assertTrue('clear-holder' in response)
-
-
