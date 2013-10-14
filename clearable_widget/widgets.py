@@ -2,6 +2,7 @@
 
 from django import forms
 from django.conf import settings
+from django.utils.safestring import mark_safe
 from django.template.loader import render_to_string
 from django.contrib.staticfiles.storage import staticfiles_storage
 
@@ -30,5 +31,5 @@ class ClearableInput(MediaMixin, forms.TextInput):
             template_name = 'clearable_widget/input.html'
 
         output = super(ClearableInput, self).render(name, value, attrs)
-        return render_to_string(
-            template_name, {'widget': output, 'name': name})
+        return mark_safe(render_to_string(template_name, {
+            'widget': output, 'name': name}))
