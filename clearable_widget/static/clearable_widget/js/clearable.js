@@ -2,7 +2,7 @@
     $.fn.clearable = function () {
         var $this = this;
         $(".clear-helper", $this.parent()).on('click', function(){
-            $this.val("").focus();
+            $(this).addClass('hidden'); $this.val("").focus();
             var form = $this.closest('form');
             if (form) { $(form).trigger('cleared.clearable', [$this]); }
         });
@@ -15,3 +15,5 @@
         });
     };
 })(jQuery);
+
+
