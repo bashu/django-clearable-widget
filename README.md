@@ -35,8 +35,14 @@ $ python manage.py collectstatic
 ```
 ## Usage
 
-[[ TODO ]]
+All you need now is to import ``ClearableInput`` class and override field's widget, for example :
+```python
+from clearable_widget import ClearableInput
 
+class Form(forms.Form):
+
+    field = forms.CharField(widget=ClearableInput)
+```
 Please see `example` application. This application is used to manually test the functionalities of this package. This also serves as a good example.
 
 You need only Django 1.4 or above to run that. It might run on older versions but that is not tested.
