@@ -1,0 +1,5 @@
+{% load staticfiles %}
+<script src="{% static "clearable_widget/js/clearable.min.js" %}" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() { $(".clear-holder input").each(function () { $(this).clearable(); }); })
+</script>
