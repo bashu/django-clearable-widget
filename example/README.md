@@ -1,5 +1,4 @@
 # Example
-===
 
 To run the example application, make sure you have the required
 packages installed.  You can do this using :
