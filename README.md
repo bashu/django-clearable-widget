@@ -49,4 +49,4 @@ You need only Django 1.4 or above to run that. It might run on older versions bu
 
 ## License
 
-`django-clearable-widget` is authored by [Basil Shubin](http://resume.github.io/?bashu) and released under the BSD license.
+`django-clearable-widget` is written by [Basil Shubin](https://github.com/bashu) and released under the BSD license.
