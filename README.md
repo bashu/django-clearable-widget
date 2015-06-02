@@ -3,9 +3,9 @@ django-clearable-widget
 
 django-clearable-widget is a custom widget that adds a input clearing button on any input fields that are using it. It clears the value, and returns focus to that field.
 
-[![Latest Version](https://pypip.in/version/django-clearable-widget/badge.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
-[![Downloads](https://pypip.in/download/django-clearable-widget/badge.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
-[![License](https://pypip.in/license/django-clearable-widget/badge.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
+[![Latest Version](https://img.shields.io/pypi/v/django-clearable-widget.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
+[![Downloads](https://img.shields.io/pypi/dm/django-clearable-widget.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
+[![License](https://img.shields.io/github/license/bashu/django-clearable-widget.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
 
 ## Installation
 ```shell
