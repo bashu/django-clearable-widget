@@ -8,8 +8,8 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-clearable-widget',
-    version='0.1.3',
-    packages=find_packages(exclude=['example', 'tests']),
+    version='0.1.4',
+    packages=find_packages(exclude=['example']),
     include_package_data=True,
     license='BSD License',
     description='Custom widget to add a (x) clear button to your input fields',
@@ -26,6 +26,10 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
