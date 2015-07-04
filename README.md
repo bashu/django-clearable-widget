@@ -12,7 +12,7 @@ Authored by [Basil Shubin](https://github.com/bashu)
 
 ## Installation
 ```shell
-$ pip install django-clearable-widget
+pip install django-clearable-widget
 ```
 ### External dependencies
 
@@ -28,13 +28,13 @@ INSTALLED_APPS = [
 ]
 ```
 and just include `clearable_widget` templates
-```html
+```html+django
 {% include "clearable_widget/clearable_widget_css.html" %} {# Before the closing head tag #}
 {% include "clearable_widget/clearable_widget_js.html" %} %} {# Before the closing body tag #}
 ```
 When deploying on production server, don't forget to run :
 ```shell
-$ python manage.py collectstatic
+python manage.py collectstatic
 ```
 ## Usage
 
