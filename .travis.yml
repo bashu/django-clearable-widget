@@ -19,6 +19,8 @@ install:
   - pip install coveralls
 script:
   - env PYTHONPATH=`pwd` coverage run --source=clearable_widget example/manage.py test clearable_widget
+after_success:
+  coveralls
 matrix:
   exclude:
     - python: "pypy3"
