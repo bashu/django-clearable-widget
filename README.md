@@ -9,6 +9,7 @@ Authored by [Basil Shubin](https://github.com/bashu)
 [![Downloads](https://img.shields.io/pypi/dm/django-clearable-widget.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
 [![License](https://img.shields.io/github/license/bashu/django-clearable-widget.svg)](https://pypi.python.org/pypi/django-clearable-widget/)
 [![Build Status](https://img.shields.io/travis/bashu/django-clearable-widget.svg)](https://travis-ci.org/bashu/django-clearable-widget/)
+[![Code Health](https://landscape.io/github/bashu/django-clearable-widget/develop/landscape.svg?style=flat)](https://landscape.io/github/bashu/django-clearable-widget/develop)
 
 ## Installation
 ```shell
