@@ -1,1 +1,1 @@
-from .widgets import ClearableInput
+from .widgets import ClearableInput  # pylint: disable=W0611
