@@ -48,7 +48,7 @@ and just include ``clearable_widget`` templates
 .. code-block:: html+django
 
     {% include "clearable_widget/clearable_widget_css.html" %} {# Before the closing head tag #}
-    {% include "clearable_widget/clearable_widget_js.html" %} %} {# Before the closing body tag #}
+    {% include "clearable_widget/clearable_widget_js.html" %} {# Before the closing body tag #}
 
 When deploying on production server, don't forget to run:
 
