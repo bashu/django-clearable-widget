@@ -21,7 +21,7 @@ class MediaMixin(object):
 
 class ClearableInput(MediaMixin, forms.TextInput):
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         if value is None:
             value = ''
 
@@ -30,6 +30,6 @@ class ClearableInput(MediaMixin, forms.TextInput):
         else:
             template_name = 'clearable_widget/input.html'
 
-        output = super(ClearableInput, self).render(name, value, attrs)
+        output = super(ClearableInput, self).render(name, value, attrs, renderer)
         return mark_safe(render_to_string(template_name, {
             'widget': output, 'name': name}))
