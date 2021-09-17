@@ -19,6 +19,12 @@ Authored by `Basil Shubin <https://github.com/bashu>`_
 .. image:: https://img.shields.io/travis/bashu/django-clearable-widget.svg
     :target: https://travis-ci.com/github/bashu/django-clearable-widget/
 
+.. raw:: html
+
+    <p align="center">
+        <img src="https://raw.githubusercontent.com/bashu/django-clearable-widget/develop/showcase.gif">
+    </p>
+
 Installation
 ------------
 
