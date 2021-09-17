@@ -10,6 +10,6 @@ class TestForm(forms.Form):
 
     field = forms.CharField(widget=ClearableInput)
 
-               
+
 class TestView(FormView):
     form_class = TestForm
