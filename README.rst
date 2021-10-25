@@ -1,10 +1,6 @@
 django-clearable-widget
 =======================
 
-django-clearable-widget is a custom widget that adds a input clearing
-button on any input fields that are using it. It clears the value, and
-returns focus to that field.
-
 .. image:: https://img.shields.io/pypi/v/django-clearable-widget.svg
     :target: https://pypi.python.org/pypi/django-clearable-widget/
 
@@ -16,6 +12,10 @@ returns focus to that field.
 
 .. image:: https://img.shields.io/travis/bashu/django-clearable-widget.svg
     :target: https://travis-ci.com/github/bashu/django-clearable-widget/
+
+django-clearable-widget is a custom widget that adds a input clearing
+button on any input fields that are using it. It clears the value, and
+returns focus to that field.
 
 .. raw:: html
 
