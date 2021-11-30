@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from django import forms
 from django.conf import settings
 from django.contrib.staticfiles.storage import staticfiles_storage
@@ -7,7 +5,7 @@ from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
 
 
-class MediaMixin(object):
+class MediaMixin:
     class Media:  # pylint: disable=C1001
         css = {
             "screen": (
@@ -29,5 +27,5 @@ class ClearableInput(MediaMixin, forms.TextInput):
         else:
             template_name = "clearable_widget/input.html"
 
-        output = super(ClearableInput, self).render(name, value, attrs, renderer)
+        output = super().render(name, value, attrs, renderer)
         return mark_safe(render_to_string(template_name, {"widget": output, "name": name}))
