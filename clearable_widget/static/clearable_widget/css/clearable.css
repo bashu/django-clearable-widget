@@ -3,7 +3,7 @@
   display: -moz-inline-stack;
   display: inline-block;
   *display: inline;
-  zoom: 1; 
+  zoom: 1;
 }
 
 .clear-holder input[type="text"],
