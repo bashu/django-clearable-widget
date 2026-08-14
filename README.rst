@@ -1,17 +1,17 @@
 django-clearable-widget
 =======================
 
-.. image:: https://img.shields.io/pypi/v/django-clearable-widget.svg
+.. image:: https://badge.fury.io/py/django-clearable-widget.svg
+    :target: https://badge.fury.io/py/django-clearable-widget
+
+.. image:: https://img.shields.io/pypi/pyversions/django-clearable-widget.svg
     :target: https://pypi.python.org/pypi/django-clearable-widget/
 
-.. image:: https://img.shields.io/pypi/dm/django-clearable-widget.svg
+.. image:: https://img.shields.io/pypi/djversions/django-clearable-widget.svg
     :target: https://pypi.python.org/pypi/django-clearable-widget/
 
-.. image:: https://img.shields.io/github/license/bashu/django-clearable-widget.svg
-    :target: https://pypi.python.org/pypi/django-clearable-widget/
-
-.. image:: https://img.shields.io/travis/bashu/django-clearable-widget.svg
-    :target: https://travis-ci.com/github/bashu/django-clearable-widget/
+.. image:: https://github.com/bashu/django-clearable-widget/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/bashu/django-clearable-widget/actions/workflows/test.yml
 
 django-clearable-widget is a custom widget that adds a input clearing
 button on any input fields that are using it. It clears the value, and
@@ -25,6 +25,8 @@ returns focus to that field.
 
 Installation
 ------------
+
+First install the module, preferably in a virtual environment. It can be installed from PyPI:
 
 .. code-block:: bash
 
@@ -80,6 +82,12 @@ a good example.
 
 You need only Django 1.4 or above to run that. It might run on older
 versions but that is not tested.
+
+Contributing
+------------
+
+If you like this module, forked it, or would like to improve it, please let us know!
+Pull requests are welcome too. :-)
 
 License
 -------

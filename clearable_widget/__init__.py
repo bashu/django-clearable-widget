@@ -1,1 +1,1 @@
-from .widgets import ClearableInput  # noqa
+from .widgets import ClearableInput  # noqa: F401

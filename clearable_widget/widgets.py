@@ -12,7 +12,7 @@ class MediaMixin:
                 staticfiles_storage.url(
                     "clearable_widget/css/clearable.min.css",
                 ),
-            )
+            ),
         }
         js = (staticfiles_storage.url("clearable_widget/js/clearable.min.js"),)
 
@@ -28,4 +28,6 @@ class ClearableInput(MediaMixin, forms.TextInput):
             template_name = "clearable_widget/input.html"
 
         output = super().render(name, value, attrs, renderer)
-        return mark_safe(render_to_string(template_name, {"widget": output, "name": name}))
+        return mark_safe(  # noqa: S308 -- rendering our own trusted template
+            render_to_string(template_name, {"widget": output, "name": name}),
+        )

@@ -1,17 +1,17 @@
 django-clearable-widget
 =======================
 
-.. image:: https://img.shields.io/pypi/v/django-clearable-widget.svg
+.. image:: https://badge.fury.io/py/django-clearable-widget.svg
+    :target: https://badge.fury.io/py/django-clearable-widget
+
+.. image:: https://img.shields.io/pypi/pyversions/django-clearable-widget.svg
     :target: https://pypi.python.org/pypi/django-clearable-widget/
 
-.. image:: https://img.shields.io/pypi/dm/django-clearable-widget.svg
+.. image:: https://img.shields.io/pypi/djversions/django-clearable-widget.svg
     :target: https://pypi.python.org/pypi/django-clearable-widget/
 
-.. image:: https://img.shields.io/github/license/bashu/django-clearable-widget.svg
-    :target: https://pypi.python.org/pypi/django-clearable-widget/
-
-.. image:: https://img.shields.io/travis/bashu/django-clearable-widget.svg
-    :target: https://travis-ci.com/github/bashu/django-clearable-widget/
+.. image:: https://github.com/bashu/django-clearable-widget/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/bashu/django-clearable-widget/actions/workflows/test.yml
 
 django-clearable-widget is a custom widget that adds a input clearing
 button on any input fields that are using it. It clears the value, and
