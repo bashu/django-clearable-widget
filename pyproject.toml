@@ -54,6 +54,7 @@ dev = [
 
 [tool.setuptools]
 packages.find.include = [ "clearable_widget*" ]
+packages.find.exclude = [ "clearable_widget.tests*" ]
 include-package-data = true
 package-data.clearable_widget = [ "jinja2/**/*.jinja", "locale/**/*", "static/**/*", "templates/**/*.html" ]
 dynamic.readme = { file = [ "PYPIREADME.rst", "CHANGES.rst" ], content-type = "text/x-rst" }
