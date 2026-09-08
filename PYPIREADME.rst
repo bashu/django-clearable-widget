@@ -29,12 +29,6 @@ Installation
 
     pip install django-clearable-widget
 
-External dependencies
-~~~~~~~~~~~~~~~~~~~~~
-
-* jQuery - this is not included in the package since it is expected
-  that in most scenarios this would already be available.
-
 Setup
 -----
 
