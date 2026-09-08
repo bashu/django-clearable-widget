@@ -180,6 +180,6 @@ ini_options.addopts = [ "--ds=clearable_widget.tests.settings", "--reuse-db", "-
 
 # ==== Coverage ====
 [tool.coverage]
+run.source = [ "clearable_widget" ]
 run.omit = [ "*/migrations/*", "*/tests/*" ]
 run.relative_files = true
-run.source = [ "clearable_widget" ]
