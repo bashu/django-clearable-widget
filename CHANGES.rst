@@ -1,6 +1,11 @@
 Changes
 -------
 
+1.2.0 (2026-09-08)
+~~~~~~~~~~~~~~~~~~
+
+* Dropped the jQuery dependency; ``clearable.js`` is now plain vanilla JS.
+
 1.1.0 (2026-08-14)
 ~~~~~~~~~~~~~~~~~~
 

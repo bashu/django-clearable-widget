@@ -32,12 +32,6 @@ First install the module, preferably in a virtual environment. It can be install
 
     pip install django-clearable-widget
 
-External dependencies
-~~~~~~~~~~~~~~~~~~~~~
-
-* jQuery - this is not included in the package since it is expected
-  that in most scenarios this would already be available.
-
 Setup
 -----
 
