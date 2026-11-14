@@ -1,6 +1,10 @@
+from typing import Any
+
 from django import forms
 from django.contrib.staticfiles.storage import staticfiles_storage
+from django.forms.renderers import BaseRenderer
 from django.template.loader import render_to_string
+from django.utils.safestring import SafeString
 from django.utils.safestring import mark_safe
 
 
@@ -17,7 +21,13 @@ class MediaMixin:
 
 
 class ClearableInput(MediaMixin, forms.TextInput):
-    def render(self, name, value, attrs=None, renderer=None):
+    def render(
+        self,
+        name: str,
+        value: Any,
+        attrs: dict[str, Any] | None = None,
+        renderer: BaseRenderer | None = None,
+    ) -> SafeString:
         if value is None:
             value = ""
 
