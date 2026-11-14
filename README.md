@@ -5,8 +5,8 @@
 | Name                                  |    Stmts |     Miss |    Cover |   Missing |
 |-------------------------------------- | -------: | -------: | -------: | --------: |
 | src/clearable\_widget/\_\_init\_\_.py |        1 |        0 |     100% |           |
-| src/clearable\_widget/widgets.py      |       14 |        0 |     100% |           |
-| **TOTAL**                             |   **15** |    **0** | **100%** |           |
+| src/clearable\_widget/widgets.py      |       17 |        0 |     100% |           |
+| **TOTAL**                             |   **18** |    **0** | **100%** |           |
 
 
 ## Setup coverage badge
