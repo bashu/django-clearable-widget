@@ -2,12 +2,12 @@
 
 [Full report](https://htmlpreview.github.io/?https://github.com/bashu/django-clearable-widget/blob/python-coverage-comment-action-data/htmlcov/index.html)
 
-| Name                              |    Stmts |     Miss |    Cover |   Missing |
-|---------------------------------- | -------: | -------: | -------: | --------: |
-| clearable\_widget/\_\_init\_\_.py |        1 |        0 |     100% |           |
-| clearable\_widget/models.py       |        0 |        0 |     100% |           |
-| clearable\_widget/widgets.py      |       18 |        0 |     100% |           |
-| **TOTAL**                         |   **19** |    **0** | **100%** |           |
+| Name                                  |    Stmts |     Miss |    Cover |   Missing |
+|-------------------------------------- | -------: | -------: | -------: | --------: |
+| src/clearable\_widget/\_\_init\_\_.py |        1 |        0 |     100% |           |
+| src/clearable\_widget/models.py       |        0 |        0 |     100% |           |
+| src/clearable\_widget/widgets.py      |       18 |        0 |     100% |           |
+| **TOTAL**                             |   **19** |    **0** | **100%** |           |
 
 
 ## Setup coverage badge
