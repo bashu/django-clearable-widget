@@ -1,6 +1,15 @@
 Changes
 -------
 
+2.0.0 (2026-11-14)
+~~~~~~~~~~~~~~~~~~
+
+* Removed Jinja2 support: the ``USE_JINJA`` setting is no longer recognised
+  and the ``clearable_widget/input.jinja`` template is gone; the widget
+  always renders ``clearable_widget/input.html``.
+* Moved the package to a ``src`` layout and switched the build backend from
+  setuptools to hatchling; tests moved to a top-level ``tests`` directory.
+
 1.3.0 (2026-10-10)
 ~~~~~~~~~~~~~~~~~~
 
