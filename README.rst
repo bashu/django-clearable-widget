@@ -74,7 +74,7 @@ Please see ``example`` application. This application is used to
 manually test the functionalities of this package. This also serves as
 a good example.
 
-You need only Django 1.4 or above to run that. It might run on older
+You need only Django 5.2 or above to run that. It might run on older
 versions but that is not tested.
 
 Contributing

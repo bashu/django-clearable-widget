@@ -2,14 +2,9 @@ SECRET_KEY = "DUMMY_SECRET_KEY"  # noqa: S105
 
 # Application definition
 
-PROJECT_APPS = ["clearable_widget.tests", "clearable_widget"]
+PROJECT_APPS = ["clearable_widget"]
 
 INSTALLED_APPS = [
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.admin",
     "django.contrib.staticfiles",
     *PROJECT_APPS,
 ]
@@ -17,12 +12,6 @@ INSTALLED_APPS = [
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "APP_DIRS": True,
-    },
-    {
-        # Mirrors the app-dirs convention a real project uses to serve
-        # "clearable_widget/input.jinja" from clearable_widget/jinja2/.
-        "BACKEND": "django.template.backends.jinja2.Jinja2",
         "APP_DIRS": True,
     },
 ]
