@@ -1,22 +1,32 @@
-from django import forms
-from django.test import TestCase
+import pytest
 
 from clearable_widget.widgets import ClearableInput
 
 
-class ClearableInputDjangoTest(TestCase):
-    def setUp(self):
-        self.field = forms.CharField(required=False, widget=ClearableInput)
+@pytest.mark.parametrize(
+    ("value", "expected_input"),
+    [
+        pytest.param(
+            "test",
+            '<input type="text" name="field" value="test" id="id_field">',
+            id="value",
+        ),
+        pytest.param(
+            None,
+            '<input type="text" name="field" id="id_field">',
+            id="none",
+        ),
+        pytest.param(
+            "<b>",
+            '<input type="text" name="field" value="&lt;b&gt;" id="id_field">',
+            id="escaped",
+        ),
+    ],
+)
+def test_render(value: str | None, expected_input: str) -> None:
+    output = ClearableInput().render("field", value, {"id": "id_field"})
 
-    def test_render(self):
-        response = self.field.widget.render("value", "test", {"id": "id_field"})
-        assert all(s in response for s in ("clear-holder", "test"))
-
-
-class ClearableInputFallbackTest(TestCase):
-    def setUp(self):
-        self.field = forms.CharField(required=False, widget=ClearableInput)
-
-    def test_render(self):
-        response = self.field.widget.render("value", None, {"id": "id_field"})
-        assert "clear-holder" in response
+    assert output == (
+        f'<div class="clear-holder">{expected_input}'
+        '<span class="clear-helper hidden">X</span></div>\n'
+    )
