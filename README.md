@@ -5,7 +5,6 @@
 | Name                                  |    Stmts |     Miss |    Cover |   Missing |
 |-------------------------------------- | -------: | -------: | -------: | --------: |
 | src/clearable\_widget/\_\_init\_\_.py |        1 |        0 |     100% |           |
-| src/clearable\_widget/models.py       |        0 |        0 |     100% |           |
 | src/clearable\_widget/widgets.py      |       18 |        0 |     100% |           |
 | **TOTAL**                             |   **19** |    **0** | **100%** |           |
 
